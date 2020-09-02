@@ -47,7 +47,7 @@
     "jest": "26.2.2",
     "@types/jest": "26.0.8",
     "ts-jest": "26.1.4",
-    "cypress": "^4.1.0",
+    "cypress": "^5.0.0",
     "@nrwl/cypress": "10.1.0",
     "@nrwl/web": "10.1.0",
     "@types/react": "16.9.38",
