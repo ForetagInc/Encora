@@ -27,7 +27,7 @@
   },
   "private": true,
   "dependencies": {
-    "document-register-element": "1.13.1",
+    "document-register-element": "1.14.10",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-is": "16.13.1",
