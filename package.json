@@ -64,7 +64,7 @@
     "eslint-plugin-react-hooks": "4.0.4",
     "eslint-plugin-cypress": "^2.10.3",
     "@babel/core": "7.9.6",
-    "@babel/preset-env": "7.9.6",
+    "@babel/preset-env": "7.12.1",
     "@babel/preset-typescript": "7.9.0",
     "@babel/preset-react": "7.9.4",
     "babel-jest": "26.2.2",
