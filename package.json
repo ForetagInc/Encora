@@ -32,7 +32,7 @@
     "react-dom": "16.13.1",
     "react-is": "16.13.1",
     "react-native-web": "0.0.0-583e16fa8",
-    "styled-components": "5.1.1"
+    "styled-components": "5.2.1"
   },
   "devDependencies": {
     "@nrwl/workspace": "10.1.0",
@@ -68,7 +68,7 @@
     "@babel/preset-typescript": "7.9.0",
     "@babel/preset-react": "7.9.4",
     "babel-jest": "26.2.2",
-    "@types/styled-components": "5.1.0",
+    "@types/styled-components": "5.1.4",
     "@types/react-is": "16.7.1",
     "babel-plugin-styled-components": "1.10.7"
   }
