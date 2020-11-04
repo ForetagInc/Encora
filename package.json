@@ -35,7 +35,7 @@
     "styled-components": "5.1.1"
   },
   "devDependencies": {
-    "@nrwl/workspace": "10.1.0",
+    "@nrwl/workspace": "10.3.2",
     "@types/node": "~8.9.4",
     "dotenv": "6.2.0",
     "ts-node": "~7.0.0",
