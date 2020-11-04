@@ -43,7 +43,7 @@
     "eslint": "6.8.0",
     "typescript": "~3.9.3",
     "prettier": "2.0.4",
-    "@nrwl/react": "10.1.0",
+    "@nrwl/react": "10.3.2",
     "@nrwl/jest": "10.1.0",
     "jest": "26.2.2",
     "@types/jest": "26.0.8",
