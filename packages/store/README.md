@@ -7,6 +7,12 @@ Encora store is a plain wrapper around [`pullstate`](https://github.com/lostpebb
 	Like with Encora, pullstate is extremely easy to use while offering all of the functionality you would expect from other store management systems such as Redux, minus the boilerplate.
 </details><br />
 
+
+### Platform Compatibility
+| Web | iOS | Android | MacOS | Windows | Linux |
+|---|---|---|---|---|---|
+| ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+
 ## Features
 
 - Built with TypeScript
@@ -28,7 +34,6 @@ export const UIStore = new Store({
 
 ```tsx
 // app.tsx
-
 import * as React from 'react';
 import { Div, Title, Button } from '@encora/components';
 import { UIStore } from './store';

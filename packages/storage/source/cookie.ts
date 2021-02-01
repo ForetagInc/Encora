@@ -8,32 +8,33 @@ async function set(name: string, value: string): Promise<boolean> {
 		case 'android':
 			await SecureStore.setItemAsync(name, value);
 			break;
-	
+
 		case 'web':
 			document.cookie = `${name}=${value}; expires=Sun, 1 Jan 2023 00:00:00 UTC; path=/; SameSite=strict; Secure`;
+			break;
 
 		default:
 			return false;
-			break;
 	}
 
 	return true;
 }
 
-async function get(name: string): Promise<string | null> {
+// eslint-disable-next-line complexity
+function get(name: string): Promise<string | null> {
 	switch (Platform.OS) {
 		case 'ios':
 		case 'android':
-			return await SecureStore.getItemAsync(name);			
-			break;
+			return SecureStore.getItemAsync(name);
 
 		case 'web':
+			// eslint-disable-next-line require-unicode-regexp
+			// eslint-disable-next-line no-extra-parens
+			// eslint-disable-next-line require-unicode-regexp
 			return ((new RegExp((name || '=') + '=(.*?); ', 'gm')).exec(document.cookie + '; ') || ['', null])[1];
-			break;
-	
+
 		default:
-			return null;
-			break;
+			return new Promise(() => null);
 	}
 }
 
