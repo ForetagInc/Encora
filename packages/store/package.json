@@ -1,0 +1,17 @@
+{
+	"name": "@encora/store",
+	"version": "1.20.6",
+	"description": "Encora store is a plain wrapper around pullstate, to provide performant yet easy stores for your Encora app.",
+	"keywords": [],
+	"author": "Chiru B <chirub@foretag.co>",
+	"license": "MIT",
+	"main": "soruce/index.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ForetagInc/Encora.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ForetagInc/Encora/issues"
+	},
+	"homepage": "https://github.com/ForetagInc/Encora#readme"
+}
