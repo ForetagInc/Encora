@@ -35,11 +35,12 @@ All components are built on top of Tailwind and will work on iOS, Android and We
 ---
 | Package  			| Name 	  | Version | Description 		  | Type | Status
 |---|---|---|---|---|---|
-| `@encora/tailwind`  	| Tailwind   | 0.1.0   |   |   |
+| `@encora/tailwind`  	| Tailwind   | 0.1.0   | Tailwind integration |   |
 | `@encora/navigation`  | Navigation | 0.1.0   |   |   |
 | `@encora/theme`  	| Theming	 | 0.1.0   |   |   |
 | `@encora/hooks`  	| Hooks	 | 0.1.0   | Utility hooks  		  |   |
 | [`@encora/store`](https://github.com/ForetagInc/Encora/tree/master/packages/store) 	| Store  	 | 1.26.0  | Store & state management | Wrapper  | Tests |
+| [`@encora/localization`](https://github.com/ForetagInc/Encora/tree/master/packages/store) 	| Store  	 | 0.1.0  | Localization |  | Minimal |
 | `@encora/storage`  	| Storage 	 | 0.1.0   |   |   |
 | `@encora/print`  	| Printing 	 | 0.1.0   |   |   |
 

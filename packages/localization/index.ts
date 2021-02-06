@@ -2,7 +2,7 @@
 /* eslint-disable dot-location */
 import i18Next, { Resource } from 'i18next';
 import { Platform } from 'react-native';
-import { initReactI18next } from 'react-i18next';
+import { initReactI18next, useTranslation } from 'react-i18next';
 import * as ExpoLocalization from 'expo-localization';
 
 function getLanguage(): string {
@@ -45,5 +45,6 @@ const Localization = {
 
 export {
 	i18n,
+	useTranslation,
 	Localization
 };
