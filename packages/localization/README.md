@@ -1,11 +1,11 @@
-# `boilerplate`
+# `localization`
 
 > TODO: description
 
 ## Usage
 
 ```
-const boilerplate = require('boilerplate');
+const localization = require('localization');
 
 // TODO: DEMONSTRATE API
 ```

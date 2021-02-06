@@ -27,6 +27,10 @@ Encora is a UI / UX framework that consists of over 300+ React components target
 
 All components are built on top of Tailwind and will work on iOS, Android and Web.
 
+## Requirements
+
+- Node v15.7 and above
+
 ## Packages
 ---
 | Package  			| Name 	  | Version | Description 		  | Type | Status
