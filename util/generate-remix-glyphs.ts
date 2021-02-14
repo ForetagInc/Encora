@@ -3,11 +3,15 @@ import Path from 'path';
 import { fileURLToPath } from 'url';
 import RemixIcons from '../components/Icon/assets/remixicon.glyph.json';
 
-const glyphs: Record<string, string> = {};
+const glyphs: Record<string, number> = {};
+
+let cMap = 59905;
 
 Object.entries(RemixIcons).forEach(entry => {
-	const [ key, value ] = entry;
-	glyphs[key] = value.unicode;
+	const [ key ] = entry;
+	glyphs[key] = cMap;
+
+	cMap++;
 });
 
 const __dirname = Path.dirname(fileURLToPath(import.meta.url));
