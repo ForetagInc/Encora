@@ -3,16 +3,9 @@
 	"version": "2.5.0",
 	"description": "",
 	"keywords": [],
-	"author": "itzezc <chirub@foretag.co>",
+	"author": "Chiru B <chirub@foretag.co>",
 	"license": "ISC",
-	"main": "source/index.tsx",
-	"directories": {
-		"source": "source",
-		"test": "__tests__"
-	},
-	"files": [
-		"source"
-	],
+	"main": "source/icon.tsx",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ForetagInc/Encora.git"
