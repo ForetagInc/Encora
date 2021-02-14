@@ -13,7 +13,8 @@
 	},
 	"scripts": {
 		"test": "jest",
-		"coverage": "jest --coverage"
+		"coverage": "jest --coverage",
+		"build:remix": "node --loader ts-node/esm.mjs --experimental-top-level-await --experimental-json-modules util/generate-remix-icons.ts"
 	},
 	"peerDependencies": {
 		"expo": "~40.0.0",
