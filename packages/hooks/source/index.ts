@@ -1,3 +1,5 @@
-export { useKeepAwake } from './keepAwake';
+/** Desktop Only */
+export { useInitDesktop } from './initDesktop';
 
-export { useFonts } from 'expo-font';
+/** Global */
+export { useKeepAwake } from './keepAwake';

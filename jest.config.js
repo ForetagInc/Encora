@@ -1,6 +1,10 @@
 export default
 {
-	preset: 'jest-expo',
+	projects: [
+		{ preset: 'jest-expo/ios' },
+		{ preset: 'jest-expo/android' },
+		{ preset: 'jest-expo/web' }
+	],
 	transform: {
 		'^.+\\.(ts|tsx)?$': 'ts-jest',
 		'^.+\\.(js|jsx)$': 'babel-jest',
@@ -10,7 +14,6 @@ export default
 	],
 	moduleFileExtensions: ['ts', 'tsx', 'js'],
 	testRegex: '/__tests__/.*\\.(test|spec)?\\.(ts|tsx)$',
-	testEnvironment: 'node',
 	coverageDirectory: './coverage',
 	coveragePathIgnorePatterns: ['node_modules'],
 };

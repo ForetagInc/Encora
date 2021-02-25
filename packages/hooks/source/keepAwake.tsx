@@ -24,7 +24,11 @@ export const useKeepAwake = () => {
 					}
 				}
 			break;
-		
+
+			case 'windows':
+			case 'macos':
+				break;
+
 			default:
 				break;
 		}
@@ -39,7 +43,7 @@ export const useKeepAwake = () => {
 				deactivateKeepAwake();
 				return true;
 			break;
-		
+
 			case 'web':
 				(wakeLock as WakeLockSentinel)
 					.release()

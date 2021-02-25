@@ -1,7 +1,7 @@
 import { Print } from '../source';
 
-describe('exports expo.print', () => {
-	it('imports expo.print', () => {
-		console.log(Print);
+describe('exports Expo.print', () => {
+	it('imports Expo.print', () => {
+		expect(Print).toEqual(Print);
 	});
 });

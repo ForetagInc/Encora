@@ -9,7 +9,7 @@ let cMap = 59905;
 
 Object.entries(RemixIcons).forEach(entry => {
 	const [ key ] = entry;
-	glyphs[key] = cMap;
+	glyphs[ key ] = cMap;
 
 	cMap++;
 });
