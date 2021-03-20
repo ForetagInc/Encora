@@ -14,3 +14,5 @@ export interface IStyles {
 export interface IStyle {
 	[index: string]: string | number
 }
+
+export type TElementState =  null | 'hover' | 'active' | 'focus';

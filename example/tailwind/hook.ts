@@ -1,10 +1,12 @@
 /* eslint-disable dot-location */
 /* eslint-disable complexity */
 
+import * as React from 'react';
+import * as ReactNative from 'react-native';
 import { create } from './create';
 import { IScreenConfig, IStyles } from './interfaces';
 
-export const createHook = (React: any, ReactNative: any) => {
+export const createHook = () => {
 	return (tailwindStyles: IStyles, webStyles: IStyles, screensConfig: IScreenConfig, spacesConfig: IStyles) => {
 
 		if (!React || !React.useMemo)
@@ -27,7 +29,7 @@ export const createHook = (React: any, ReactNative: any) => {
 					}
 				});
 
-			const cacheKey = breakPointsConfig.map(breakpoint => `${breakpoint.name}=${breakpoint.actif}`);
+			const cacheKey = breakPointsConfig.map(breakpoint => `${breakpoint.name}=${breakpoint.active}`);
 
 			return React.useMemo(() => {
 				return create(tailwindStyles, webStyles, breakPointsConfig, spacesConfig);

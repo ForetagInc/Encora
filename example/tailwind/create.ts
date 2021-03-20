@@ -8,7 +8,7 @@
 
 import React from 'react';
 import { Platform } from 'react-native';
-import { IBreakpointConfig, IStyle, IStyles } from './interfaces';
+import { IBreakpointConfig, IStyle, IStyles, TElementState } from './interfaces';
 
 const defaultBreakpointKey = '__default';
 
@@ -46,7 +46,7 @@ export const addLetterSpacing = (style: any, letterSpacing: any) => {
 	style.letterSpacing = Number.parseFloat(letterSpacing) * style.fontSize;
 }
 
-export const create = (tailwindStyles: IStyles, _webStyles: IStyles, breakPointsConfig: IBreakpointConfig[], spacesConfig: IStyles) => {
+export const create = (tailwindStyles: IStyles, webStyles: IStyles, breakPointsConfig: IBreakpointConfig[], spacesConfig: IStyles) => {
 
     const screenNames: string[] = breakPointsConfig
 		.map(breakpoint => breakpoint.name);
@@ -60,8 +60,8 @@ export const create = (tailwindStyles: IStyles, _webStyles: IStyles, breakPoints
 
 	const breakpointPrefixRegex = new RegExp(`^(${screenNames.join('|')}):`);
 
-	const tailwind = (classNames?: string, hovered?: boolean): React.CSSProperties => {
-
+	const tailwind = (classNames?: string, state?: TElementState): React.CSSProperties =>
+	{
 		const style = {};
 
 		if (!classNames)
@@ -98,7 +98,13 @@ export const create = (tailwindStyles: IStyles, _webStyles: IStyles, breakPoints
 				const className = screenClassName.replace(breakpointPrefixRegex, '');
 
 				const name = className.startsWith('hover:')
-							&& hovered === true ? className.replace('hover:', '') : className;
+							&& state === 'hover' ? className.replace('hover:', '') : className;
+
+				if (Platform.OS === 'web') {
+					if (webStyles[name]) {
+						Object.assign(style, webStyles[name])
+					}
+				}
 
 				if (!tailwindStyles[name]) {
 

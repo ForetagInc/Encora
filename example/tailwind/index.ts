@@ -6,12 +6,14 @@ import * as ReactNative from 'react-native';
 import { createHook as __createHook } from './hook';
 // import { IScreenConfig, IStyles } from './interfaces';
 
-const createHook = __createHook(React, ReactNative);
+const createHook = __createHook();
 
 import defaultStyles from './styles.json';
 import defaultWebStyles from './web.json';
 import defaultScreens from './screens.json';
 import defaultSpaces from './spaces.json';
+
+import { TElementState } from './interfaces';
 
 // const { getColor } = _create(defaultStyles, {}, {});
 
